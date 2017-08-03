@@ -1,6 +1,6 @@
-//  $(function() {
-//      $('#likes').click(function() {
-//          var num = $('#number').innerHTML;
-//          alert(num)
-//      })
-//  })
+$.ajax({
+    url:'http://wq8.youqulexiang.com/wechat/jssdk',
+    success:function(rtn){
+        console.log(rtn)
+    }
+})
