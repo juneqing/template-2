@@ -5,8 +5,6 @@ function getThumbsUp() {
             $('#number').text(rtn.data);
         }
     })
-
-
 }
 
 
@@ -35,9 +33,7 @@ function postThumbsUp() {
 
 function storageThumbsUpPage(url) {
     var pagesStr = localStorage.getItem('pages');
-    var pages = JSON.parse(pagesStr ? pageStr : '[]');
-
-
+    var pages = JSON.parse(pagesStr ? pagesStr : '[]');
     pages.push(url);
     localStorage.setItem('pages', JSON.stringify(pages));
 }
